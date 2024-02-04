@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>School</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script defer src="home.js"></script>
+    <title>ECF</title>
 </head>
 <body>
     <header>
@@ -20,7 +22,8 @@
                 <li><a href="">Home</a></li>
                 <li><a href="">Sobre nós</a></li>
                 <li><a href="">Contato</a></li>
-                <li><a href="">Agendamento</a></li>
+                <li><a href="">Professores</a></li>
+                <li><a href="">Turmas</a></li>
             </ul>
         </nav>
       
@@ -29,15 +32,44 @@
 
     <section>
         <div id="div_info">
-            <h3>Professional</h3>
+            <h3>Nota 10 no MEC</h3>
             <h2>ECF</h2>
             <p>No coração pulsante da criação cinematográfica, surge a Escola Cinematográfica de Filmagens, conhecida carinhosamente como ECF. Nossa história começou em 2005, quando o cineasta visionário Cleber Site Silva transformou sua paixão por contar histórias em uma visão: criar um espaço único para cultivar talentos e transformar amantes do cinema em contadores de histórias extraordinários.</p>
 
             <button id="btn_mat">Matricule-se</button>
+            <button id="btn_agen">Agende uma Visita</button>
         </div>
         <div id="div_foto">
-            <img src="assets/cam.png" alt="">
+            <img src="assets/gar.png" alt="Estudante com Caderno">
+            <a href="https://br.freepik.com/psd-gratuitas/retrato-de-estudio-de-uma-jovem-estudante-adolescente_38080880.htm#query=estudante%20png%20fotografia&position=3&from_view=search&track=ais&uuid=2c1a51e7-5b97-45be-a574-8a6ba572bfb4">Imagem do Freepik</a>
         </div>
+
     </section>
+
+    <div id="div_matricula">
+        <p>Matricule-se</p>
+        <form action="">
+            <input type="text" placeholder="Nome Completo">
+            <input type="text" placeholder="CPF">
+            <input type="email" placeholder="Email principal" name="" id="">
+            <input type="tel" placeholder="Telefone ou celular">
+            <input id="btn_sub_mat" type="submit" value="Matricular">
+        </form>
+        <button id="btn_sair_matricula">Sair</button>
+    </div>
+
+
+    <div id="div_agendamento">
+        <p>Agende uma visita</p>
+        <form action="">
+            <input type="text" placeholder="Nome Completo">
+            <input type="text" placeholder="CPF">
+            <input type="email" placeholder="Email principal" name="" id="">
+            <input type="tel" placeholder="Telefone ou celular">
+            <input type="datetime" placeholder="Data">
+            <input id="btn_sub_age" type="submit" value="Agendar">
+        </form>
+        <button id="btn_sair_agendamento">Sair</button>
+    </div>
 </body>
 </html>
