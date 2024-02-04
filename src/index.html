@@ -48,11 +48,12 @@
 
     <div id="div_matricula">
         <p>Matricule-se</p>
-        <form action="">
-            <input type="text" placeholder="Nome Completo">
-            <input type="text" placeholder="CPF">
-            <input type="email" placeholder="Email principal" name="" id="">
-            <input type="tel" placeholder="Telefone ou celular">
+
+        <form action="/matricular" method="post" id="form_mat">
+            <input type="text" placeholder="Nome Completo" name="nome">
+            <input type="text" placeholder="CPF" name="cpf">
+            <input type="email" placeholder="Email principal" name="email">
+            <input type="tel" placeholder="Telefone ou celular" name="telefone">
             <input id="btn_sub_mat" type="submit" value="Matricular">
         </form>
         <button id="btn_sair_matricula">Sair</button>
@@ -61,10 +62,10 @@
 
     <div id="div_agendamento">
         <p>Agende uma visita</p>
-        <form action="">
+        <form action="" method="">
             <input type="text" placeholder="Nome Completo">
             <input type="text" placeholder="CPF">
-            <input type="email" placeholder="Email principal" name="" id="">
+            <input type="email" placeholder="Email principal">
             <input type="tel" placeholder="Telefone ou celular">
             <input type="datetime" placeholder="Data">
             <input id="btn_sub_age" type="submit" value="Agendar">
